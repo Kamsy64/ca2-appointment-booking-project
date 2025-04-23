@@ -1,0 +1,184 @@
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fb;
+  padding: 40px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Main Heading Styling */
+h1 {
+  color: #333;
+  font-size: 2.5rem;  /* Adjusted size if needed */
+  margin-top: 0;  /* Reset margin to 0 */
+  position: relative;
+  top: -20px;  /* Move the heading up */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Subheading Styling (for login or dashboard) */
+h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Form Container Styling */
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+form:hover {
+  transform: translateY(0px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  background-color: #f1f8ff;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #003366;
+  transform: scale(1);
+}
+
+/* Appointment List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+li .delete {
+  background-color: #e74c3c;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li .delete:hover {
+  background-color: #c0392b;
+}
+
+li .delete:active {
+  background-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Appointment list styling */
+  li {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  li .delete {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Exit Button Styling */
+.exit-btn {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 100px; /* Restricts the button width */
+  position: relative;
+  top: -20px; /* Move the exit button up */
+}
+
+.exit-btn:hover {
+  background-color: #ff0000;
+}
